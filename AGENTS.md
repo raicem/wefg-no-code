@@ -18,6 +18,15 @@ This repository helps AI agents and developers generate valid WordPress WXR file
 ./scripts/verify-import.sh path/to/generated.wxr.xml
 ```
 
+## Workspace conventions
+
+- Write generated implementation code under `src/`.
+- Write generated tests under `tests/`.
+- Write generated WXR output under `tmp/` (for example `tmp/generated.wxr.xml`).
+- Save generated WXR to a file in this repository (not stdout-only output).
+
+This keeps the repository predictable so users can own and iterate generated code over time.
+
 ## Problem framing
 
 - Migrating content into WordPress is easy to get almost right and hard to get fully right.
