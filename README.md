@@ -74,13 +74,4 @@ Rules:
 ## More detail
 
 For WXR primer, gotchas, and pinned reference permalinks, see `AGENTS.md`.
-
-## JS simulation workflow
-
-This repo includes a small JavaScript exporter simulation in `src/` and tests in `tests/`:
-
-```bash
-node --test tests/export-wxr.test.mjs
-node src/export-wxr.mjs tests/fixtures/sample-input.json tmp/generated.wxr.xml
-./scripts/verify-import.sh tmp/generated.wxr.xml
 ```
