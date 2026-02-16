@@ -20,24 +20,6 @@ Note: let your AI agent pull any needed reference artifacts and dependencies as 
 
 If you want to adopt this as your own project template, you can remove `.git/` and reinitialize version control.
 
-## Quick start
-
-```bash
-./scripts/fetch-reference-artifacts.sh
-./scripts/verify-import.sh path/to/generated.wxr.xml
-```
-
-`fetch-reference-artifacts.sh` downloads pinned upstream references (theme test data + exporter/importer source snapshots) into `references/upstream/`.
-
-## Workspace conventions
-
-- Put generated/exporter source code under `src/`.
-- Put tests under `tests/`.
-- Write generated WXR outputs to `tmp/` (already gitignored), e.g. `tmp/generated.wxr.xml`.
-- Save WXR to a file path inside this repo (do not leave output only on stdout).
-
-These conventions keep generated work contained so users can own and iterate on the same folders.
-
 ## Prompt examples
 
 ### 1) Generate exporter code
