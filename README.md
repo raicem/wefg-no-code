@@ -74,4 +74,3 @@ Rules:
 ## More detail
 
 For WXR primer, gotchas, and pinned reference permalinks, see `AGENTS.md`.
-```
