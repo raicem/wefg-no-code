@@ -1,17 +1,24 @@
-# wefg-no-code
+# WEFG No Code
 
-A language-agnostic playbook for generating **valid WordPress WXR** files with AI and verifying them against a **real WordPress importer workflow**.
+A language-agnostic library for generating code that produces **valid WordPress WXR** files with AI and verifying them against a **real WordPress importer workflow**.
 
 ## Goal
 
-Most WXR exporters fail in subtle ways: XML may be well-formed, but import behavior still breaks.
+If you are migrating content to WordPress, this library helps you generate exporter code (in any language) that produces valid WXR files WordPress can import.
 
-This repo gives you a repeatable loop:
+It combines prompt examples, reference artifacts, and import verification scripts so you can move from source data to a valid WXR file with confidence.
 
-1. Generate exporter code in any language (JS, Python, Ruby, etc.).
-2. Produce a WXR file.
-3. Import it with WP-CLI in a local WordPress instance.
-4. Inspect failures and iterate until import checks pass.
+## How to use this library
+
+1. Clone this repository.
+2. Open the folder in your AI coding agent of choice.
+3. Start with the prompt examples in this README.
+4. Put implementation code in `src/`, tests in `tests/`, and generated WXR output in `tmp/`.
+5. Run the verification workflow and iterate until import checks pass.
+
+Note: let your AI agent pull any needed reference artifacts and dependencies as part of its setup workflow.
+
+If you want to adopt this as your own project template, you can remove `.git/` and reinitialize version control.
 
 ## Quick start
 
@@ -31,7 +38,7 @@ This repo gives you a repeatable loop:
 
 These conventions keep generated work contained so users can own and iterate on the same folders.
 
-## Prompt ideas
+## Prompt examples
 
 ### 1) Generate exporter code
 
