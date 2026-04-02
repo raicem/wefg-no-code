@@ -74,3 +74,7 @@ Rules:
 ## More detail
 
 For WXR primer, gotchas, and pinned reference permalinks, see `AGENTS.md`.
+
+## License
+
+GPL-2.0-or-later
